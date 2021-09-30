@@ -1,0 +1,344 @@
+/*cor do fundo da pagina*/
+body{
+    background-color: #008080;
+}
+
+/*tamanho da tela da pagina*/
+.container{
+    width: 100%;
+}
+
+/* configurando o titulo da pagina*/
+h1{
+    margin: 35px auto;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*usado caso o usuario nao tiver umas
+    das fontes usa a seguinte e assim por diante*/
+    letter-spacing: 6px;
+    color: aliceblue;
+}
+
+/*configurando a parte quem sou eu*/
+
+/*menu*/
+.principal h2{
+    text-align: end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px 50px 1px 15px;
+}
+
+/*meu nome*/
+.principal h3{ 
+    text-align: left;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    margin: 0px 30px 30px 70px;
+}
+
+/*sobre eu*/
+.principal pre{
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    margin: 10px 20px 20px 80px;
+}
+
+/*tudo que tiver aki dentro vai ser filho do display*/
+.cardes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /*para quebra a linha*/
+    margin: 22px;
+}
+
+/*arrumando as imagens*/
+.imagem{
+    width: 47%;
+    margin-bottom: 30px;
+    max-height: 350px; /*altura*/
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px rgba(248, 238, 238, 0.9);
+    overflow: hidden;/*esconder as bordas das imagem que transborda*/
+    justify-content: space-between;/*espaco entre eles*/
+}
+
+/*para quando passa o mouse em cima vai destaca*/
+.imagem:hover{
+    box-shadow: 5px 5px 5px 5px rgba(248,238,238,0.9);
+}
+
+.imagem h4{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 15px auto;
+}
+
+.imagem img{
+    width: 100%;
+}
+
+@media screen and (min-width:940px) {
+    .imagem{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    h1{
+        font-size: 27px;
+    }
+    .imagem{
+        width: 100%;
+    }
+}
+
+/*para pagina formulário para contato*/
+.principal p{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin: 0px 20px 20px 100px;
+}
+
+form{
+    background: #ddd;
+    width: 700px;
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 32px 64px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form h4{
+    margin-bottom: 32px;
+}
+
+
+div input{
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    position:relative;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 700px;
+}
+
+div select{
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 100px;
+}
+
+div textarea{
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    position: relative;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 300px;
+}
+
+/*configurando os label*/
+
+input ~ label{
+    top: 16px;
+    left: 0;
+}
+
+
+input:focus ~ label,
+input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;/*espacamento entre letras*/
+}
+
+/* configurando os botões
+   redefinindo a aparência
+*/
+
+input, button, select, textarea{
+
+    /*caixas*/
+    width: 100%;
+    padding: 10px;
+
+    border: black;
+    border-bottom: 1px solid black;
+
+    outline: black;
+
+    /*texto*/
+    color: black;
+    font-size: 1em;
+}
+
+button{
+    margin-top: 16px;
+    background-color: #999;
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px 5px rgba(248,238,238,0.9);
+}
+
+/*configurando o span error*/
+.input span.error{
+    display: flex;
+    padding: 0;
+
+    background-color: rgba(255, 0,0, 0.2);
+}
+
+.input span.error.active{
+    border: 1px solid red;
+    padding: 0,4em;
+}
+
+/*PAGINA SOBRE MIM*/
+.familia{
+    width: 100%;
+    margin-bottom: 30px;
+    max-height: 100%; /*altura*/
+    background-color: cornsilk;
+    box-shadow: 3px 3px 3px 3px rgba(248, 238, 238, 0.9);
+    overflow: hidden;/*esconder as bordas das imagem que transborda*/
+    justify-content: space-between;/*espaco entre eles*/
+    max-width: 100%;
+    
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.integrantes h4{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .integrantes{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .integrantes{
+        width: 100%;
+    }
+}
+
+/*rodape*/
+.footer {
+    float: left;
+    width: 100%;
+
+    text-align: center;
+    background-color:cadetblue;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .contato{ 
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin: 0px 30px 30px 70px;
+}
+
+
+.menus{ 
+    text-align: left;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin: 0px 30px 30px 70px;
+}
+
+.menus img{
+    width: 120px;
+    margin: 0px 30px 30px 20px;
+}
+
+/*para quando passa o mouse em cima vai destaca*/
+.contato img:hover{
+    box-shadow: 5px 5px 5px 5px rgba(248,238,238,0.9);
+}
+
+.menus img:hover{
+    box-shadow: 5px 5px 5px 5px rgba(248,238,238,0.9);
+}
+
+/*pagina hobby*/
+*{
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 65px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: beige;
+    text-align: center;
+}
+.slider{
+    width: 100vw;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider--width{
+    height: 100%;
+    display:flex;
+    transition: all ease 0.3s;
+}
+
+.slider--item{
+    width: 100%;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider--controls{
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

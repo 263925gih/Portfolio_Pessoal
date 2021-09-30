@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8" />
+    <meta nome = "viewport" content = "device-width, initial-scale = 1.0"/>
+    <title>Formulário de Contato</title>
+    <link rel = "stylesheet" href = "styles/reset.css"/>
+    <link rel = "stylesheet" href = "styles/estilos.css"/>
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário de Contato</h1>
+        <hr>
+        <div class="principal">
+            <div class="formulário">
+                <h2>
+                    <a href = "index.htm">HOME</a> 
+                    <a href="formContato.htm">CONTATO</a>  
+                    <a href="sobreMim.htm">SOBRE MIM</a>
+                </h2>
+                <h3>CONTATO:</h3>
+                <p>
+                    Use este formulário para entrar em contato.<br>
+                    <br>
+                    Entrarei em contato com você o mais breve possível.
+                </p>
+            </div>
+            <form name="formulário" action="" method="POST">
+                <h4>Preencha o Formulário Abaixo:</h4>
+                <div class="input">
+                    <label>Seu Nome:</label>
+                    <input required type="text" name="nome"/>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <label>Email:</label>
+                    <input required type="email" name="email"/>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <label>Telefone:</label>
+                    <input type="text" name="telefone"/>
+                   
+                    <label>WhatsApp:</label>
+                    <input type="text" name="whatts"/>
+                    <span class="error"></span>
+                </div>
+                
+                <div class="input">
+                    <label>Cidade:</label>
+                    <input required type="text" name="cidade"/>
+    
+                    <label>CEP:</label>
+                    <input required type="text" name="cep"/>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                    <dl>
+                        <dd>
+                            <select required name="estado">
+                                <option value="estado">Estado</option>
+                                <option value="RO">RO</option>
+                                <option value="SP">SP</option>
+                                <option value="MG">MG</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                                <option value="DF">DF</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <span class="error"></span>
+                </div>
+
+                <div class="input">
+                        Sua Mensagem:
+                        <textarea required name="mensagem" cols="30" rows="6"></textarea>
+                    <span class="error"></span>
+                </div>
+
+                <button type="submit">Enviar</button>  
+                <button type="reset">limpar</button>
+            </form>
+            <hr>
+        </div>
+    </section>
+    <div class="footer">
+        <h1>CONTATO</h1>
+        <h2 style="color: white; font-size: 110%">
+          EMAIL: modestoheloa@gmail.com<br>
+          <br>
+          TELEFONE: (69)9 9232 - 8525<br>
+          <br>
+          WhatsApp: (69)9 9966 - 0987<br>
+        </h2>
+      </div>
+    </div>
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
